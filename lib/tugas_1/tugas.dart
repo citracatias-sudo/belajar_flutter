@@ -7,10 +7,12 @@ class Tugas1flutter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 204, 137, 178),
+        backgroundColor: Color(0xffFFC0CB),
    //pakai from arbg
-   title: Text ("Profil Saya"),
-   centerTitle: true
+   title: Text ("Her Space"),
+   titleTextStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+   centerTitle: true,
+  
    // appbar
       ),
       body: Center(
@@ -20,17 +22,19 @@ class Tugas1flutter extends StatelessWidget {
             
             SizedBox(height:20),
             Text(
-              'Nama Lengkap : Riska Liana',
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              'Character Profile : Sakata Gintoki',
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
             Text(
-              'Riska adalah nama pena dari Liana, seorang penulis muda berbakat.',
+              'Is a samurai who is doing odd jobs with Shinpachi and Kagura.',
               style: TextStyle(fontSize: 18),
             ),Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+               mainAxisAlignment: MainAxisAlignment.start,
               children: [Icon(Icons.location_on),
-          Text("Jakarta")],),
+          Text("Jakarta")],), 
+         
+Image.asset("assets/images/la_pettite_prince.png")
           ],
         ),
 
@@ -39,5 +43,6 @@ class Tugas1flutter extends StatelessWidget {
       ),
     );
   }
+  
   
 }
